@@ -9,5 +9,63 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: rgb(133, 128, 128);
+  background-color: #67bfbe;
+}
+.validation-form{
+  display: flex;
+  flex-direction: column;
+}
+.content{
+  width: 50%;
+}
+.container{
+  width: 80%;
+  margin: 100px auto;
+}
+.validation-input{
+  height: 35px;
+  font-size: 14px;
+  border: none;
+  border: 2px solid #ccc;
+  padding: 0 10px;
+  width: 49%;
+  outline: none;
+}
+.validation-input::placeholder{
+  color: #ccc;
+}
+.form-label{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  justify-content: space-between;
+}
+.form-label div{
+  width: 70%;
+}
+.title{
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.btn-submit{
+  height: 40px;
+  width: 40%;
+  border: none;
+  margin: 20px 0;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: transparent;
+}
+#number{
+  width: 70%;
+}
+#email{
+  width: 70%;
 }

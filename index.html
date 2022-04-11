@@ -12,9 +12,39 @@
 </head>
 
 <body>
+<div class="container">
+  <div class="content">
+    <h1 class="title">Create an account</h1>
+    <form id="validationForm" class="validation-form">
+      <label class="form-label" for="firstName"> Your name:
+        <div>
+          <input type="text" id="firstName" class="validation-input" placeholder="Enter your name">
+          <input type="text" id="secondName"  class="validation-input" placeholder="Enter your surname">
+        </div>
+      </label>
+      <p id="nameError" class="error"></p>
+    <label id="phoneNum" class="form-label" for="number"> Your phone:
+      <input id="number" type="number" class="validation-input" placeholder="Enter your number" pattern="[0-9]{5}">
+    </label>
+    <p id="phoneError" class="error"></p>
+    <label class="form-label" for="email"> Your email:
+      <input id="email" type="email" class="validation-input" placeholder="Enter your email">
+    </label>
+    <label class="form-label" for="password">
+      Password:
+      <div>
+        <input id="password" type="text" class="validation-input" placeholder="Create password">
+        <input type="text" class="validation-input" placeholder="Confirm your password">
+      </div>
+    </label>
+    <p id="passwordError" class="error"></p>
+    <p id="passwordError2" class="error"></p>
+     
+      <button id="btnSubmit" class="btn-submit">Submit</button>
+    </form>
+  </div>
+</div>
 
-  
- </div>
 
 
   <script src="js/main.js">
